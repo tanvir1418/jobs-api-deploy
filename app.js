@@ -63,7 +63,7 @@ const start = async () => {
     try {
         connectDB(process.env.MONGO_URI);
         app.listen(port, () => {
-            console.log(`Server is running at http://locahost:${port}`);
+            console.log(`Server is running at http://localhost:${port}`);
         });
     } catch (error) {
         console.log(error);
